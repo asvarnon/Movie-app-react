@@ -10,6 +10,8 @@
   text-align: center;
 }
 
+
+
 nav {
   display: flex;
   justify-content: center;
@@ -28,6 +30,33 @@ nav {
   text-decoration: none;
 }
 
+main {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 15px;
+}
+
+.searchBox {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background: #7ec9ec none;
+  border-radius: 8px;
+  color: #53565A;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.4s ease-out;
+}
+
+.searchBox:focus {
+    box-shadow: 0px 0px 8px 3px #45525f;
+}
 
 /*~~~~~~~~~~~~~~~~~default react styling~~~~~~~~~~~~~~~~`*/
 
