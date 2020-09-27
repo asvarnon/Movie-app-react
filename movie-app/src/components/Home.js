@@ -11,7 +11,7 @@ function Home () {
         results: [],
         selected: {}
         //sets initial state
-    })
+    });
     const OMDbURL =`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDbkeyV2}`
 
     const search = (event) => {
