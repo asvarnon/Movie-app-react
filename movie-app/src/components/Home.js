@@ -17,9 +17,10 @@ function Home () {
     const search = (event) => {
         if (event.key === "Enter"){
             //from here, using Axios (dev dependency) request. the "&s=" is how the api searches.
-            axios(OMDbURL + "&s=" + state.userInput).then(({data}) => {
+            axios(OMDbURL + "&s=" + state.userInput).then((data) => {
                     //having data in {}  destructures the object to go one layer deeper, instead of {data.data}.search
-                let results = data.search;
+                console.log(data.data.Search);
+                let results = data.data.Search;
                 setState(prevState => {
                     return {...prevState, results: results}
                 })
